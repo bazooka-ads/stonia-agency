@@ -3,48 +3,291 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stonia Agency - Coming Soon</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Stonia Agency</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            background: linear-gradient(to right, #1c92d2, #f2fcfe);
-            color: #333;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
+            padding-top: 56px;
+            font-family: Arial, sans-serif;
+            position: relative;
+            min-height: 100vh;
+            background-color: #f0f5f9; /* Light blue background */
         }
-        .container {
+        .header-bg {
+            background-color: #007bff; /* Blue header background */
+            color: #ffffff;
+            padding: 80px 0;
             text-align: center;
-            background: white;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-        .social-icons a {
-            color: #1c92d2;
-            margin: 0 10px;
-            font-size: 24px;
+        .header-bg h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 20px;
         }
-        .social-icons a:hover {
-            color: #f2fcfe;
+        .header-bg p {
+            font-size: 1.5rem;
+            font-weight: 300;
+            margin-bottom: 20px;
+        }
+        .header-bg .lead {
+            font-size: 1.2rem;
+            font-weight: 400;
+        }
+        .navbar {
+            background-color: #ffffff;
+            border-bottom: 1px solid #dee2e6;
+        }
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #007bff; /* Blue navbar brand color */
+        }
+        .navbar-nav .nav-link {
+            color: #007bff !important; /* Blue navbar link color */
+        }
+        .navbar-nav .nav-link:hover {
+            color: #0056b3 !important; /* Darker blue on hover */
+        }
+        .footer {
+            background-color: #007bff; /* Blue footer background */
+            color: #ffffff;
+            padding: 40px 0;
+        }
+        .footer a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .bg-light {
+            background-color: #ffffff !important; /* White background for sections */
+        }
+        .blockquote {
+            border-left: 5px solid #007bff; /* Blue blockquote border */
+            background-color: #f8f9fa; /* Light gray background for blockquote */
+            padding: 15px;
+            margin: 0 0 20px;
         }
     </style>
 </head>
 <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Stonia Agency</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-<div class="container">
-    <h1 class="display-4">Stonia Agency</h1>
-    <p class="lead">We are coming soon! Stay tuned for something amazing.</p>
-    <p>For inquiries, please contact us at: <a href="mailto:contact@stoniaagency.com">contact@stoniaagency.com</a></p>
-    <div class="social-icons">
-        <a href="https://www.facebook.com/stoniaagency" target="_blank"><i class="fab fa-facebook"></i></a>
+    <!-- Header -->
+    <header class="header-bg">
+        <div class="container">
+            <h1 class="display-4">Welcome to Stonia Agency</h1>
+            <p class="lead">Your one-stop solution for digital marketing and design</p>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Stonia Agency is dedicated to providing top-notch digital marketing services. With a team of experienced professionals, we help businesses grow their online presence and reach their goals. Our mission is to deliver innovative solutions that drive results.</p>
+            <p>Founded in 2020, Stonia Agency has quickly established itself as a leader in the digital marketing industry. We specialize in social media marketing, web design, and SEO optimization, offering a comprehensive suite of services to meet the diverse needs of our clients.</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="bg-light py-5">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Social Media Marketing</h4>
+                    <p>We help you create and manage top-performing social media campaigns to grow your business and engage with your audience.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Web Design</h4>
+                    <p>Our team designs visually appealing and highly functional websites tailored to your business needs.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>SEO Optimization</h4>
+                    <p>Improve your website's visibility on search engines and attract more organic traffic with our SEO services.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Content Creation</h4>
+                    <p>We produce high-quality content that resonates with your audience and drives engagement across various platforms.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Email Marketing</h4>
+                    <p>Our email marketing strategies are designed to convert leads into customers and build long-term relationships.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Pay-Per-Click Advertising</h4>
+                    <p>Maximize your ROI with our targeted PPC campaigns that reach the right audience at the right time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-5">
+        <div class="container">
+            <h2>What Our Clients Say</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <blockquote class="blockquote">
+                        <p class="mb-0">Stonia Agency transformed our social media presence and helped us reach a wider audience. Their team is professional and highly skilled.</p>
+                        <footer class="blockquote-footer">CEO of Fashion Industry</footer>
+                    </blockquote>
+                </div>
+                <div class="col-md-4">
+                    <blockquote class="blockquote">
+                        <p class="mb-0">The website they designed for us is fantastic! It's user-friendly and visually appealing. We couldn't be happier with the results.</p>
+                        <footer class="blockquote-footer">Founder of Technology Solutions</footer>
+                    </blockquote>
+                </div>
+                <div class="col-md-4">
+                    <blockquote class="blockquote">
+                        <p class="mb-0">Their SEO services boosted our search engine rankings significantly. We're now attracting more organic traffic than ever before.</p>
+                        <footer class="blockquote-footer">Owner of E-commerce Store</footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="bg-light py-5">
+        <div class="container">
+            <h2>Latest from Our Blog</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Maximizing Social Media ROI</h4>
+                    <p>Learn how to get the most out of your social media marketing efforts. <a href="#">Read more</a></p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Web Design Trends 2024</h4>
+                    <p>Discover the latest trends in web design and how they can enhance your website. <a href="#">Read more</a></p>
+                </div>
+                <div class="col-md-4">
+                    <h4>SEO Tips for Small Businesses</h4>
+                    <p>Simple yet effective SEO strategies for small businesses to boost their online presence. <a href="#">Read more</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or would like to work with us, feel free to get in touch!</p>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Confirmation Modal -->
+    <div class="modal fade" id="confirmationModal" tabindex="-1" role="dialog" aria-labelledby="confirmationModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="confirmationModalLabel">Message Sent!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Your message has been successfully sent. We will get back to you shortly.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Stonia Agency</h3>
+                    <p>Your one-stop solution for digital marketing and design.</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Contact Us</h3>
+                    <p>Email: contact@stonia-agency.com</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Follow Us</h3>
+                    <p>
+                        <a href="https://www.facebook.com/stonia-agency" target="_blank">Facebook</a><br>
+                        <a href="https://www.instagram.com/stonia-agency" target="_blank">Instagram</a><br>
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <p>&copy; 2024 Stonia Agency. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Custom Script -->
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Show the modal immediately after form submission
+            $('#confirmationModal').modal('show');
+
+            // Optional: Clear the form fields after submission
+            document.getElementById('contactForm').reset();
+        });
+    </script>
+
 </body>
 </html>
